@@ -30,9 +30,25 @@ Search is a first-class citizen of the query engine. All search functionality is
 </div>
 
 
-## Benchmarks
+## Open Benchmarks
 
-* [SearchBench](https://serenedb.com/searchbench) - open benchmark for search and analytics: SereneDB, ClichHouse, Elastic, OpenSearch, ParadeDB
+### 10x faster than ClickHouse on [10 billion OpenTelemetry logs](https://serenedb.com/searchbench?dataset=otel_logs_10b&include=SereneDB,ClickHouse,ClickHouse-sorted&run=hot)
+
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="resources/images/searchbench-10b-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="resources/images/searchbench-10b-light.svg">
+    <img alt="SearchBench at 10B rows." src="resources/images/searchbench-10b-light.svg">
+</picture>
+
+### [1 billion OpenTelemetry logs](https://playground.serenedb.com/searchbench?s=eyJ2IjoxLCJkIjoib3RlbF9sb2dzXzFiIiwidGgiOiJsaWdodCJ9)
+
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="resources/images/searchbench-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="resources/images/searchbench-light.svg">
+    <img alt="SearchBench at 1B rows." src="resources/images/searchbench-light.svg">
+</picture>
+
+* [SearchBench](https://serenedb.com/searchbench) - open benchmark for search and analytics: SereneDB, ClickHouse, Elastic, OpenSearch, ParadeDB
 * [Search Benchmark, The Game](https://serenedb.com/search-benchmark-game) - low-level search engine benchmark: [IResearch](iresearch/README.md), Lucene, Tantivy
 
 ## Links
